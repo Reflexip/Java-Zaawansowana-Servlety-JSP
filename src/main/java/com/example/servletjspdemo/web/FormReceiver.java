@@ -48,6 +48,7 @@ import javax.servlet.http.HttpSessionEvent;
 						String email	=	request.getParameter("email");
 						String employer	=	request.getParameter("employer");
 						int radioChoise	= 	Integer.parseInt(request.getParameter("radio"));
+						
 						String whatDo	=	request.getParameter("whatDo");
 						
 						Person person = new Person(id,  name, surname, email, employer, radioValues[radioChoise], whatDo);
@@ -66,7 +67,8 @@ import javax.servlet.http.HttpSessionEvent;
 					}else{
 				        out.println("Niestety jestes juz zarejestrowany.");
 					}
-				}}finally{
+				 }
+				}finally{
 					
 				}
 				
